@@ -1803,7 +1803,7 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate,
                  decidePolicyFor navigationAction: WKNavigationAction,
                  decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         var decisionHandlerCalled = false
-
+        // Tambahkan ini
         // ── Helper: allow tanpa trigger Universal Links ────────────────
         let allowSkippingUniversalLinks = WKNavigationActionPolicy(
             rawValue: WKNavigationActionPolicy.allow.rawValue + 2
