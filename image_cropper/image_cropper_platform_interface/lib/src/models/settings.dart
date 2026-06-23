@@ -241,16 +241,16 @@ class AndroidUiSettings extends PlatformUiSettings {
   @override
   Map<String, dynamic> toMap() => {
         'android.toolbar_title': this.toolbarTitle,
-        'android.toolbar_color': int32(this.toolbarColor?.toARGB32()),
+        'android.toolbar_color': int32(this.toolbarColor?.value),
         'android.status_bar_light': this.statusBarLight,
         'android.nav_bar_light': this.navBarLight,
-        'android.toolbar_widget_color': int32(this.toolbarWidgetColor?.toARGB32()),
-        'android.background_color': int32(this.backgroundColor?.toARGB32()),
+        'android.toolbar_widget_color': int32(this.toolbarWidgetColor?.value),
+        'android.background_color': int32(this.backgroundColor?.value),
         'android.active_controls_widget_color':
-            int32(this.activeControlsWidgetColor?.toARGB32()),
-        'android.dimmed_layer_color': int32(this.dimmedLayerColor?.toARGB32()),
-        'android.crop_frame_color': int32(this.cropFrameColor?.toARGB32()),
-        'android.crop_grid_color': int32(this.cropGridColor?.toARGB32()),
+            int32(this.activeControlsWidgetColor?.value),
+        'android.dimmed_layer_color': int32(this.dimmedLayerColor?.value),
+        'android.crop_frame_color': int32(this.cropFrameColor?.value),
+        'android.crop_grid_color': int32(this.cropGridColor?.value),
         'android.crop_frame_stroke_width': this.cropFrameStrokeWidth,
         'android.crop_grid_row_count': this.cropGridRowCount,
         'android.crop_grid_column_count': this.cropGridColumnCount,
